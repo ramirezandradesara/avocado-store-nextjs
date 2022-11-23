@@ -7,10 +7,10 @@ const Navbar = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link prefetch={false} href="/">Home</Link>
+                        <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link prefetch={false} href="/about">About Us</Link>
+                        <Link href="/about">About Us</Link>
                     </li>
                 </ul>
             </nav>
