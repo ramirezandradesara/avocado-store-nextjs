@@ -7,24 +7,23 @@ const ProductItem = () => {
     } = useRouter();
 
     const [product, setProduct] = useState<TProduct>()
-    console.log("🚀 ~ file: [productId].tsx ~ line 10 ~ ProductItem ~ product", product.id)
 
     useEffect(() => {
         window
             .fetch(`/api/avo/${productId}`)
             .then(response => response.json())
-            .then( (data ) => {
+            .then((data) => {
                 setProduct(data)
-              })
+            })
 
-    }, [])
+    }, [product, setProduct, productId])
 
     return (
         <>
             <div>
-                Esta es la página del producto: {productId}
+                Esta es la página del producto: {product?.id}
             </div>
-            <div>Product: {product.name}</div>
+            <div>Product: {product?.name}</div>
         </>
     )
 };
