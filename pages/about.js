@@ -1,6 +1,6 @@
 import React from 'react'
 
-function About() {
+const About = () => {
   return (
     <div>Esta página es de About</div>
   )
