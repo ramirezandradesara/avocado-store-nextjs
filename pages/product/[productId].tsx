@@ -5,6 +5,8 @@ const ProductItem = () => {
     const {
         query: { productId }
     } = useRouter();
+    console.log(productId);
+    
 
     const [product, setProduct] = useState<TProduct>()
 
@@ -16,7 +18,7 @@ const ProductItem = () => {
                 setProduct(data)
             })
 
-    }, [product, setProduct, productId])
+    }, [productId])
 
     return (
         <>
