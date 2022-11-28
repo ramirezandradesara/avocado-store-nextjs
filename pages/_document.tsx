@@ -1,15 +1,20 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { Inter } from '@next/font/google'
 
 export default function Document() {
     return (
         <Html>
             <Head>
-            {/* Favicon */}
-            {/* webfonts */}
-            {/* stylesheets */}
-            {/* script de internet */}
+                {/* Favicon */}
+                {/* webfonts */}
+                {/* stylesheets */}
+                {/* script de internet */}
+
+                {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" /> */}
             </Head >
-            <body className='my-body-class'>
+            <body>
                 <Main />
                 <NextScript />
             </body>

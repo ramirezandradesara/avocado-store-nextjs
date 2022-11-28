@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import 'styles/tailwind.css'
-
 
 const Home = () => {
 
