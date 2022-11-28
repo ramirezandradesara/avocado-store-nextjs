@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+// import 'styles/tailwind.css'
+
 
 const Home = () => {
 
@@ -16,9 +18,15 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Hola Platzi! </h1>
+      <h1 className="text-3xl font-bold underline">Hola Platzi! </h1>
       {productList?.map((product) => (
-        <div key={product.id}>{product.name}</div>
+        <div className='lg:flex gap-10'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <img src={product.image} alt={product.id} />
+            <div key={product.id}>{product.name}</div>
+            <div>Price: {product?.price}</div>
+          </div>
+        </div>
       ))}
     </div>
   )

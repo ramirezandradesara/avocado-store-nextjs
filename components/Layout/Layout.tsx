@@ -11,12 +11,6 @@ const Layout: React.FC<Props> = ({ children }) => {
             <Navbar />
             {children}
             <footer>This is the footer</footer>
-
-            <style jsx>{`
-                 .container{
-                        background-color:salmon;
-                    }
-            `}</style>
         </div>
     )
 }
