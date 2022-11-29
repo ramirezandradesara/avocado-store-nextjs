@@ -35,16 +35,16 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 const ProductItem = ({ product }: { product: TProduct }) => {
     return (
-        <div className='lg:flex justify-center gap-10 '>
+        <div className='lg:flex justify-center gap-10'>
             <div className='flex-column shadow-lg p-8 rounded-xl m-5'>
-                <Image src={product?.image} alt={product?.id} width={300} height={300} />
+                <Image src={product?.image} alt={product?.id} width={300} height={300} priority/>
                 <div key={product?.id} className='text-2xl my-2 font-bold'>{product?.name}</div>
                 <div>Price: {product?.price}</div>
                 <br />
                 {product?.attributes && Object.keys(product?.attributes).map((key) => (
                     <>
-                        <div className='font-bold my-1 first-letter:uppercase'>{key}:</div>
-                        <div className='mb-5'>{product?.attributes[key]}</div>
+                        <div className='font-bold my-1 first-letter:uppercase' key={key}>{key}:</div>
+                        <div className='mb-5' key={product?.attributes[key]}>{product?.attributes[key]}</div>
                     </>
                 ))}
             </div>
