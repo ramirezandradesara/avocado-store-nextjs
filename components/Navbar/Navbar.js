@@ -3,13 +3,13 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='my-5 ml-7'>
             <nav>
-                <ul>
-                    <li>
+                <ul className='flex justify-center '>
+                    <li className='mx-5'>
                         <Link href="/">Home</Link>
                     </li>
-                    <li>
+                    <li className='mx-5'>
                         <Link href="/about">About Us</Link>
                     </li>
                 </ul>

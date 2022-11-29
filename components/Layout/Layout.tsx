@@ -10,7 +10,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <div className='container'>
             <Navbar />
             {children}
-            <footer>This is the footer</footer>
+            <footer className='my-5 ml-7'>Made with 💗 by Sara Ramírez Andrade</footer>
         </div>
     )
 }

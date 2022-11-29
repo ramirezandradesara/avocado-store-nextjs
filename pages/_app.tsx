@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
     // props adicionales
 
     return (
-        <Layout >
+        <Layout>
             <main className={inter.className}>
                 <Component {...pageProps} />
             </main>
